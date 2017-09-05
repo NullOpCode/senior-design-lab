@@ -1,2 +1,2 @@
 # Sandbox Branch
-Used as an archive for iterations, testing, experimentation, etc.
+Used as an archive for new iterations, testing, experimentation, etc.
