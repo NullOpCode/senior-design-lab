@@ -1,0 +1,36 @@
+path = '/users/Alex/ProjectSeniorDesign/wpfiletest.waypoints'
+wp_file = open(path, 'r')
+wp = wp_file.read()
+print(wp)
+i = 0
+wp = wp.split('\n')
+print(wp)
+wp = '\t'.join(wp)
+print
+print(wp)
+wp = wp.split()
+print(wp)
+
+WParray_1 = [0,0,0,0,0,0,0,0,0,0,0,0]
+WParray_2 = [0,0,0,0,0,0,0,0,0,0,0,0]
+wp.remove('QGC')
+wp.remove('WPL')
+wp.remove('110')
+print
+print(wp)
+map(float, wp)
+
+for i in range(0,11):
+    WParray_1[i] = wp[i]
+
+for i in range(12,23):
+    WParray_2[i%12] = wp[i]
+
+print
+print(WParray_1)
+print(WParray_2)
+
+#path = '/users/Alex/ProjectSeniorDesign/rallytestfile.ral'
+#rp_file = open(path, 'r')
+#rp = rp_file.read()
+#print(rp)
